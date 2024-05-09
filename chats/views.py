@@ -37,8 +37,7 @@ def get_feedback(request):
 
       obj = Feedback.objects.all()
       
-      return redirect(request, 'consultation/chat_body.html',{"obj":obj})
-
+      return redirect(request, 'consultation/chat_body.html', {"obj":obj})
 
 
 

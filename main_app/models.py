@@ -4,8 +4,7 @@ from django.contrib.postgres.fields import ArrayField
 
 from datetime import date
 
-# Create your models here.
-
+# Models are used to create tables/fields in the database
 
 #user = models.OneToOneField(settings.AUTH_USER_MODEL)
 

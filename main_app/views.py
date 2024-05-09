@@ -12,9 +12,17 @@ from chats.models import Chat,Feedback
 
 
 #loading trained_model
-import joblib as jb
-model = jb.load('trained_model')
+# import joblib as jb
+# model = jb.load('trained_model.dot')
 
+
+import joblib
+
+try:
+    model = joblib.load('trained_model')
+except Exception as e:
+    print("An error occurred while loading the model:", str(e))
+    # Handle the error as needed
 
 
 
@@ -85,7 +93,8 @@ def patient_ui(request):
 def pviewprofile(request, patientusername):
 
     if request.method == 'GET':
-
+ 
+ 
           puser = User.objects.get(username=patientusername)
 
           return render(request,'patient/view_profile/view_profile.html', {"puser":puser})

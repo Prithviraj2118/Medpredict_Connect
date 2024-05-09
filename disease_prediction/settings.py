@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'disease_prediction.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'predico',
-        'USER': 'yada',
-        'PASSWORD': '1234',
-        'HOST': 'postgres://yada:2ss53gzLhtjAUmexspqvw2rQma9j5biL@dpg-cjgcsfk1ja0c73bujkbg-a.frankfurt-postgres.render.com/predico'
+        'NAME': 'MediCare',
+        'USER': 'postgres',
+        'PASSWORD': 'Prithvi@23',
+        'HOST': 'localhost'
     }
 }
 
@@ -132,3 +132,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'templates'),
     os.path.join(BASE_DIR, 'boot')
 ]
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
